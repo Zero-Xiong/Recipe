@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ir8-HV-5n4"/>
+                        <viewControllerLayoutGuide type="bottom" id="vzO-aE-1LC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUA-y4-9vE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breadslaunch" translatesAutoresizingMaskIntoConstraints="NO" id="bNs-0L-9YH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 Zero Xiong Inc. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7G-yw-MtF">
+                                <rect key="frame" x="14" y="626" width="348" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6rl-2c-EsC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World Renowned Recipes" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wK-Jd-yRV">
+                                <rect key="frame" x="20" y="87" width="237" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="nKB-l0-n5N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2wK-Jd-yRV" firstAttribute="top" secondItem="ir8-HV-5n4" secondAttribute="bottom" constant="67" id="Uio-ad-nfh"/>
+                            <constraint firstItem="h7G-yw-MtF" firstAttribute="centerX" secondItem="uUA-y4-9vE" secondAttribute="centerX" id="YAt-2K-PR4"/>
+                            <constraint firstItem="vzO-aE-1LC" firstAttribute="top" secondItem="bNs-0L-9YH" secondAttribute="bottom" id="ZsB-Sa-CuY"/>
+                            <constraint firstItem="bNs-0L-9YH" firstAttribute="top" secondItem="uUA-y4-9vE" secondAttribute="top" id="jEm-Th-Y4y"/>
+                            <constraint firstAttribute="trailing" secondItem="bNs-0L-9YH" secondAttribute="trailing" id="k9u-qs-HBs"/>
+                            <constraint firstItem="2wK-Jd-yRV" firstAttribute="leading" secondItem="uUA-y4-9vE" secondAttribute="leading" constant="20" id="p4n-Gi-Q7c"/>
+                            <constraint firstItem="bNs-0L-9YH" firstAttribute="leading" secondItem="uUA-y4-9vE" secondAttribute="leading" id="yn3-PD-5lV"/>
+                            <constraint firstItem="h7G-yw-MtF" firstAttribute="top" secondItem="bNs-0L-9YH" secondAttribute="bottom" constant="-41" id="z78-oe-tIN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="breadslaunch" width="595" height="842"/>
+    </resources>
+</document>
