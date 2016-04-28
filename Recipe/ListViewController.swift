@@ -24,24 +24,33 @@ class ListViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        //let bkImage = UIImage(named: "breadsindex")
+        let bkImage = UIImage(named: "breadsindex")
         
-        //self.tableView.backgroundColor = UIColor(patternImage: bkImage!)
+        let bkImageView = UIImageView(frame: self.view.frame)
+        bkImageView.image = bkImage
+        bkImageView.contentMode = .ScaleAspectFill
+//      
+//        let topConstraint = NSLayoutConstraint(item: bkImageView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: tableView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0)
+//        
+//        let leadingContraint = NSLayoutConstraint(item: bkImageView, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: tableView, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: 0)
+//        
+//        let trailingConstraint = NSLayoutConstraint(item: bkImageView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: tableView, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0)
+//        
+//        let bottomConstraint = NSLayoutConstraint(item: bkImageView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: tableView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0)
+//        
+//        //tableView.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        bkImageView.addConstraints([topConstraint, leadingContraint, trailingConstraint, bottomConstraint])
         
-        //let bkImageView = UIImageView(frame: self.view.frame)
-        //bkImageView.image = bkImage
-        //bkImageView.contentMode = .ScaleAspectFill
-      
-        //tableView.backgroundView = bkImageView
-        //tableView.insertSubview(bkImageView, atIndex: 0)
-        //tableView.sendSubviewToBack(bkImageView)
+        tableView.backgroundView = bkImageView
+        
         //tableView.backgroundColor = UIColor.clearColor()
-        
-        //let imageView : UIImageView = UIImageView(image: UIImage(named: "breadsindex"))
-        //self.tableView.backgroundView = imageView
         
         NSUserDefaultsManager.initializeDefault()
         initializeiCloud()
+        
+    }
+    
+    func SetImageViewConstraints() {
         
     }
     
@@ -121,7 +130,7 @@ class ListViewController: UITableViewController {
         
         }
         
-        //cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.text = RecipeManager.recipes[indexPath.item].Title
         cell.Recipe = RecipeManager.recipes[indexPath.item]
         

@@ -64,7 +64,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vx9-s5-zeU" id="1Z6-hG-a9a">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -162,7 +162,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0ux-VS-Rjm">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0ux-VS-Rjm">
                                 <rect key="frame" x="169" y="315" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
@@ -204,8 +204,6 @@
                         <outlet property="activityIndicator" destination="0ux-VS-Rjm" id="msW-YZ-NUO"/>
                         <outlet property="addButton" destination="9d8-nC-E0O" id="M7t-6A-KL2"/>
                         <outlet property="doneButton" destination="S7O-Ej-lVw" id="TlQ-ls-8iD"/>
-                        <outlet property="iCloudDocButton_Click" destination="cOA-3Y-tAz" id="ewl-a9-Opq"/>
-                        <outlet property="icloudDocButton" destination="cOA-3Y-tAz" id="KcQ-36-UM5"/>
                         <outlet property="recipeContent" destination="mPk-yo-zwC" id="uN5-ER-hrh"/>
                         <outlet property="titleText" destination="O44-So-bYg" id="pkn-DF-8Qp"/>
                     </connections>

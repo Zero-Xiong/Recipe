@@ -26,6 +26,9 @@ class NSUserDefaultsManager: NSObject {
                 RecipeManager.recipes = recipes
             }
         }
+//        else {
+//            synchronize()
+//        }
     }
 
 }

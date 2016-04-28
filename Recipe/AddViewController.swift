@@ -18,9 +18,6 @@ class AddViewController: UIViewController, UIDocumentPickerDelegate {
     
     @IBOutlet var addButton: UIButton!
     
-    @IBOutlet var icloudDocButton: UIButton!
-    
-    
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     
@@ -107,13 +104,21 @@ class AddViewController: UIViewController, UIDocumentPickerDelegate {
     @IBAction func iCloudDocButton_Click(sender: AnyObject) {
         //refer to link explain why we need "public.text" here :   https://developer.apple.com/library/ios/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html
         
-        //
+        let fileManager = NSFileManager.defaultManager()
+        
+        let iCloudURL = fileManager.ubiquityIdentityToken
+
+        if (iCloudURL != nil) {
         let documentPicker: UIDocumentPickerViewController = UIDocumentPickerViewController(documentTypes: ["public.text"], inMode: UIDocumentPickerMode.Import)
         documentPicker.delegate = self
         
         documentPicker.modalPresentationStyle = UIModalPresentationStyle.FullScreen
         
         self.presentViewController(documentPicker, animated: true, completion: nil)
+        }
+        else {
+            print("no icloud")
+        }
     }
     
     func documentPicker(controller: UIDocumentPickerViewController, didPickDocumentAtURL url: NSURL) {
