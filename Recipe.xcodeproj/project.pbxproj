@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		C8569B9B1CD1DB2600CBB39F /* iCloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8569B9A1CD1DB2600CBB39F /* iCloudManager.swift */; };
 		C8569B9D1CD1E4B400CBB39F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8569B9C1CD1E4B400CBB39F /* Reachability.swift */; };
+		C8569BAA1CD204CC00CBB39F /* breads.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA11CD204CC00CBB39F /* breads.jpg */; };
+		C8569BAB1CD204CC00CBB39F /* breads.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA21CD204CC00CBB39F /* breads.pdf */; };
+		C8569BAC1CD204CC00CBB39F /* BreadsIndex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA31CD204CC00CBB39F /* BreadsIndex.jpg */; };
+		C8569BAD1CD204CC00CBB39F /* breadsindex.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA41CD204CC00CBB39F /* breadsindex.pdf */; };
+		C8569BAE1CD204CC00CBB39F /* breadslaunch.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA51CD204CC00CBB39F /* breadslaunch.pdf */; };
+		C8569BAF1CD204CC00CBB39F /* honeycomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA61CD204CC00CBB39F /* honeycomb.jpg */; };
+		C8569BB01CD204CC00CBB39F /* honeycomb.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA71CD204CC00CBB39F /* honeycomb.pdf */; };
+		C8569BB11CD204CC00CBB39F /* strawberries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA81CD204CC00CBB39F /* strawberries.jpg */; };
+		C8569BB21CD204CC00CBB39F /* strawberries.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8569BA91CD204CC00CBB39F /* strawberries.pdf */; };
+		C8569BB61CD2056500CBB39F /* Recipe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8569BB51CD2056500CBB39F /* Recipe.jpg */; };
+		C8569BB81CD2057800CBB39F /* Recipe App icons in Resources */ = {isa = PBXBuildFile; fileRef = C8569BB71CD2057800CBB39F /* Recipe App icons */; };
 		C899E8AB1CC8B6610052BD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899E8AA1CC8B6610052BD85 /* AppDelegate.swift */; };
 		C899E8B01CC8B6610052BD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C899E8AE1CC8B6610052BD85 /* Main.storyboard */; };
 		C899E8B21CC8B6610052BD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C899E8B11CC8B6610052BD85 /* Assets.xcassets */; };
@@ -44,6 +55,17 @@
 /* Begin PBXFileReference section */
 		C8569B9A1CD1DB2600CBB39F /* iCloudManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCloudManager.swift; sourceTree = "<group>"; };
 		C8569B9C1CD1E4B400CBB39F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		C8569BA11CD204CC00CBB39F /* breads.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = breads.jpg; path = ../image/breads.jpg; sourceTree = "<group>"; };
+		C8569BA21CD204CC00CBB39F /* breads.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = breads.pdf; path = ../image/breads.pdf; sourceTree = "<group>"; };
+		C8569BA31CD204CC00CBB39F /* BreadsIndex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BreadsIndex.jpg; path = ../image/BreadsIndex.jpg; sourceTree = "<group>"; };
+		C8569BA41CD204CC00CBB39F /* breadsindex.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = breadsindex.pdf; path = ../image/breadsindex.pdf; sourceTree = "<group>"; };
+		C8569BA51CD204CC00CBB39F /* breadslaunch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = breadslaunch.pdf; path = ../image/breadslaunch.pdf; sourceTree = "<group>"; };
+		C8569BA61CD204CC00CBB39F /* honeycomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = honeycomb.jpg; path = ../image/honeycomb.jpg; sourceTree = "<group>"; };
+		C8569BA71CD204CC00CBB39F /* honeycomb.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = honeycomb.pdf; path = ../image/honeycomb.pdf; sourceTree = "<group>"; };
+		C8569BA81CD204CC00CBB39F /* strawberries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = strawberries.jpg; path = ../image/strawberries.jpg; sourceTree = "<group>"; };
+		C8569BA91CD204CC00CBB39F /* strawberries.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = strawberries.pdf; path = ../image/strawberries.pdf; sourceTree = "<group>"; };
+		C8569BB51CD2056500CBB39F /* Recipe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Recipe.jpg; path = "../../../../../Volumes/VMware Shared Folders/HostD/Recipe Images/Recipe.jpg"; sourceTree = "<group>"; };
+		C8569BB71CD2057800CBB39F /* Recipe App icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Recipe App icons"; path = "../../../../../Volumes/VMware Shared Folders/HostD/Recipe Images/Recipe App icons"; sourceTree = "<group>"; };
 		C899E8A71CC8B6610052BD85 /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C899E8AA1CC8B6610052BD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C899E8AF1CC8B6610052BD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,9 +112,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8569B9E1CD2048500CBB39F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C8569BA01CD204A300CBB39F /* AppIcons */,
+				C8569B9F1CD2049900CBB39F /* Images */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C8569B9F1CD2049900CBB39F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C8569BA11CD204CC00CBB39F /* breads.jpg */,
+				C8569BA21CD204CC00CBB39F /* breads.pdf */,
+				C8569BA31CD204CC00CBB39F /* BreadsIndex.jpg */,
+				C8569BA41CD204CC00CBB39F /* breadsindex.pdf */,
+				C8569BA51CD204CC00CBB39F /* breadslaunch.pdf */,
+				C8569BA61CD204CC00CBB39F /* honeycomb.jpg */,
+				C8569BA71CD204CC00CBB39F /* honeycomb.pdf */,
+				C8569BA81CD204CC00CBB39F /* strawberries.jpg */,
+				C8569BA91CD204CC00CBB39F /* strawberries.pdf */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C8569BA01CD204A300CBB39F /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				C8569BB71CD2057800CBB39F /* Recipe App icons */,
+				C8569BB51CD2056500CBB39F /* Recipe.jpg */,
+			);
+			name = AppIcons;
+			sourceTree = "<group>";
+		};
 		C899E89E1CC8B6610052BD85 = {
 			isa = PBXGroup;
 			children = (
+				C8569B9E1CD2048500CBB39F /* SupportingFiles */,
 				C899E8A91CC8B6610052BD85 /* Recipe */,
 				C899E8BE1CC8B6620052BD85 /* RecipeTests */,
 				C899E8C91CC8B6620052BD85 /* RecipeUITests */,
@@ -257,8 +314,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C899E8B51CC8B6620052BD85 /* LaunchScreen.storyboard in Resources */,
+				C8569BAD1CD204CC00CBB39F /* breadsindex.pdf in Resources */,
+				C8569BAB1CD204CC00CBB39F /* breads.pdf in Resources */,
+				C8569BB11CD204CC00CBB39F /* strawberries.jpg in Resources */,
+				C8569BB61CD2056500CBB39F /* Recipe.jpg in Resources */,
+				C8569BB81CD2057800CBB39F /* Recipe App icons in Resources */,
 				C899E8B21CC8B6610052BD85 /* Assets.xcassets in Resources */,
+				C8569BAE1CD204CC00CBB39F /* breadslaunch.pdf in Resources */,
+				C8569BB01CD204CC00CBB39F /* honeycomb.pdf in Resources */,
+				C8569BAA1CD204CC00CBB39F /* breads.jpg in Resources */,
+				C8569BAF1CD204CC00CBB39F /* honeycomb.jpg in Resources */,
+				C8569BB21CD204CC00CBB39F /* strawberries.pdf in Resources */,
 				C899E8B01CC8B6610052BD85 /* Main.storyboard in Resources */,
+				C8569BAC1CD204CC00CBB39F /* BreadsIndex.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
