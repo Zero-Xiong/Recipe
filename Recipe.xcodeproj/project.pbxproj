@@ -16,6 +16,8 @@
 		C899E8D91CC8D5BC0052BD85 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899E8D81CC8D5BC0052BD85 /* ListViewController.swift */; };
 		C899E8DB1CC9BD060052BD85 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899E8DA1CC9BD060052BD85 /* RecipeModel.swift */; };
 		C899E8DD1CC9BD950052BD85 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899E8DC1CC9BD950052BD85 /* RecipeManager.swift */; };
+		C8A745021CD0AFDF00EEE26E /* NSUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A745011CD0AFDF00EEE26E /* NSUserDefaultsManager.swift */; };
+		C8A745041CD0B86100EEE26E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A745031CD0B86100EEE26E /* MyTableViewCell.swift */; };
 		C8B4F6931CCF59BE005C9294 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B4F6921CCF59BE005C9294 /* AddViewController.swift */; };
 		C8B4F6951CCF59CD005C9294 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B4F6941CCF59CD005C9294 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		C899E8D81CC8D5BC0052BD85 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C899E8DA1CC9BD060052BD85 /* RecipeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		C899E8DC1CC9BD950052BD85 /* RecipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		C8A745011CD0AFDF00EEE26E /* NSUserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsManager.swift; sourceTree = "<group>"; };
+		C8A745031CD0B86100EEE26E /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		C8B4F6921CCF59BE005C9294 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C8B4F6941CCF59CD005C9294 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +109,7 @@
 		C899E8A91CC8B6610052BD85 /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				C8A745011CD0AFDF00EEE26E /* NSUserDefaultsManager.swift */,
 				C899E8AA1CC8B6610052BD85 /* AppDelegate.swift */,
 				C899E8AE1CC8B6610052BD85 /* Main.storyboard */,
 				C8B4F6921CCF59BE005C9294 /* AddViewController.swift */,
@@ -115,6 +120,7 @@
 				C899E8B61CC8B6620052BD85 /* Info.plist */,
 				C899E8DA1CC9BD060052BD85 /* RecipeModel.swift */,
 				C899E8DC1CC9BD950052BD85 /* RecipeManager.swift */,
+				C8A745031CD0B86100EEE26E /* MyTableViewCell.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -272,9 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B4F6931CCF59BE005C9294 /* AddViewController.swift in Sources */,
+				C8A745041CD0B86100EEE26E /* MyTableViewCell.swift in Sources */,
 				C899E8D91CC8D5BC0052BD85 /* ListViewController.swift in Sources */,
 				C899E8DD1CC9BD950052BD85 /* RecipeManager.swift in Sources */,
 				C8B4F6951CCF59CD005C9294 /* DetailViewController.swift in Sources */,
+				C8A745021CD0AFDF00EEE26E /* NSUserDefaultsManager.swift in Sources */,
 				C899E8AB1CC8B6610052BD85 /* AppDelegate.swift in Sources */,
 				C899E8DB1CC9BD060052BD85 /* RecipeModel.swift in Sources */,
 			);

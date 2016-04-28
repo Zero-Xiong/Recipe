@@ -10,7 +10,7 @@ import UIKit
 
 class ListViewController: UITableViewController {
     
-    let arraydata = ["item1", "item2", "item3", "item4"]
+    //let arraydata = ["item1", "item2", "item3", "item4"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +36,19 @@ class ListViewController: UITableViewController {
         //let imageView : UIImageView = UIImageView(image: UIImage(named: "breadsindex"))
         //self.tableView.backgroundView = imageView
         
+        NSUserDefaultsManager.initializeDefault()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -53,16 +61,16 @@ class ListViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return arraydata.count
+        return RecipeManager.recipes.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! MyTableViewCell
 
         // Configure the cell...
         if (indexPath.item % 2 == 0) {
-            cell.backgroundColor = UIColor.grayColor()
+            cell.backgroundColor = UIColor.clearColor()
         }
         else {
             cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
@@ -71,8 +79,9 @@ class ListViewController: UITableViewController {
         }
         
         //cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.textLabel?.text = arraydata[indexPath.item]
-
+        cell.textLabel?.text = RecipeManager.recipes[indexPath.item].Title
+        cell.Recipe = RecipeManager.recipes[indexPath.item]
+        
         return cell
     }
  
@@ -85,17 +94,19 @@ class ListViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            RecipeManager.DeleteRecipe(indexPath.item)
+            
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -112,14 +123,23 @@ class ListViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "detailview") {
+            let cell = sender as! MyTableViewCell
+            let detailview = segue.destinationViewController as! DetailViewController
+            
+            detailview.recipe_Title = cell.Recipe.Title
+            detailview.recipe_Content = cell.Recipe.Content
+            
+        }
     }
-    */
+    
 
 }

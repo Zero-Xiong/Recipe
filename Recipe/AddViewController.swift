@@ -16,7 +16,9 @@ class AddViewController: UIViewController {
     
     @IBOutlet var doneButton: UIBarButtonItem!
     
+    @IBOutlet var addButton: UIButton!
     
+    @IBOutlet var icloudDocButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,13 @@ class AddViewController: UIViewController {
         
         titleText.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
         recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(AddViewController.textTitleDidChange),
+                                                         name: UITextFieldTextDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(AddViewController.recipeContentDidChange),
+                                                         name: UITextViewTextDidChangeNotification, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,9 +46,47 @@ class AddViewController: UIViewController {
         recipeContent.resignFirstResponder()
     }
     
+    func textTitleDidChange() {
+        HandleButtonState()
+    }
+    
+    func recipeContentDidChange() {
+        HandleButtonState()
+    }
     
     @IBAction func titleDoneButton_Click(sender: AnyObject) {
         titleText.resignFirstResponder()
+    }
+    
+    func HandleButtonState(){
+        if (recipeContent.text != "") {
+            doneButton.enabled = true
+        }
+        else {
+            doneButton.enabled = false
+        }
+        
+        if ( titleText.text != "" && recipeContent.text != "") {
+            addButton.enabled = true
+            addButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        }
+        else {
+            addButton.enabled = false
+            addButton.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Disabled)
+        }
+    }
+    
+    
+    @IBAction func addButton_Click(sender: AnyObject) {
+        RecipeManager.AddRecipe(titleText.text!, content: recipeContent.text)
+        
+        titleText.text = ""
+        recipeContent.text = ""
+        doneButton.enabled = false
+        addButton.enabled = false
+        addButton.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Disabled)
+        
+        NSUserDefaultsManager.synchronize()
     }
 
     /*

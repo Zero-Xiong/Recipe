@@ -13,12 +13,23 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var recipeContent: UITextView!
     
+    var recipe_Title: String?
+    var recipe_Content: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.title = recipe_Title
+        
+        recipeContent.text = recipe_Content
     }
 
     override func didReceiveMemoryWarning() {
