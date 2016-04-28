@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UIDocumentPickerDelegate {
 
     @IBOutlet var titleText: UITextField!
     
@@ -19,6 +19,10 @@ class AddViewController: UIViewController {
     @IBOutlet var addButton: UIButton!
     
     @IBOutlet var icloudDocButton: UIButton!
+    
+    
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +82,9 @@ class AddViewController: UIViewController {
     
     
     @IBAction func addButton_Click(sender: AnyObject) {
+        
+        activityIndicator.startAnimating()
+        
         RecipeManager.AddRecipe(titleText.text!, content: recipeContent.text)
         
         titleText.text = ""
@@ -87,8 +94,51 @@ class AddViewController: UIViewController {
         addButton.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Disabled)
         
         NSUserDefaultsManager.synchronize()
+        iCloudManager.SendToCloud()
+        
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            self.activityIndicator.stopAnimating()
+        }
+        
     }
 
+    
+    @IBAction func iCloudDocButton_Click(sender: AnyObject) {
+        //refer to link explain why we need "public.text" here :   https://developer.apple.com/library/ios/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html
+        
+        //
+        let documentPicker: UIDocumentPickerViewController = UIDocumentPickerViewController(documentTypes: ["public.text"], inMode: UIDocumentPickerMode.Import)
+        documentPicker.delegate = self
+        
+        documentPicker.modalPresentationStyle = UIModalPresentationStyle.FullScreen
+        
+        self.presentViewController(documentPicker, animated: true, completion: nil)
+    }
+    
+    func documentPicker(controller: UIDocumentPickerViewController, didPickDocumentAtURL url: NSURL) {
+        if(controller.documentPickerMode == UIDocumentPickerMode.Import) {
+            let content = OpenFile(url.path!, utf8: NSUTF8StringEncoding)
+            
+            recipeContent.text = content
+        }
+    }
+    
+    func OpenFile(path: String, utf8: NSStringEncoding = NSUTF8StringEncoding) -> String? {
+        
+        let contents : String?
+        
+        do {
+            contents = try String(contentsOfFile: path, encoding: utf8)
+        }
+        catch {
+            contents = nil
+        }
+        
+        return contents
+        
+    }
+  
     /*
     // MARK: - Navigation
 

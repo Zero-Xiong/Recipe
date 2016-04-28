@@ -9,6 +9,7 @@
 import UIKit
 
 class RecipeManager: NSObject {
+    
     static var recipes = [RecipeModel]()
     
     class func AddRecipe(title: String, content: String)  {
@@ -29,4 +30,5 @@ class RecipeManager: NSObject {
         
         return RecipeModel()
     }
+    
 }

@@ -14,7 +14,11 @@ class ListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(networkStatusChanged), name: ReachabilityStatusChangedNotification, object: nil)
+        
+        Reachability().monitorReachabilityChanges()
+        
         // Uncomment the following line to preserve selection between presentations
          self.clearsSelectionOnViewWillAppear = true
 
@@ -37,9 +41,48 @@ class ListViewController: UITableViewController {
         //self.tableView.backgroundView = imageView
         
         NSUserDefaultsManager.initializeDefault()
+        initializeiCloud()
         
     }
-
+    
+    func  initializeiCloud()  {
+        let fileManager = NSFileManager.defaultManager()
+        
+        let iCloudURL = fileManager.ubiquityIdentityToken
+        
+        let networkstatus = Reachability().connectionStatus()
+        
+        var online: Bool = false
+        
+        switch networkstatus {
+        case .Offline, .Unknown:
+            online = false
+        case .Online(ReachabilityType.WWAN):
+            online = true
+        case .Online(ReachabilityType.WiFi) :
+            online = true
+        //default:
+        //    online = false
+        }
+        
+        if (iCloudURL != nil && online) {
+            let store = NSUbiquitousKeyValueStore.defaultStore()
+            let notification = NSNotificationCenter.defaultCenter()
+            
+            notification.addObserver(self, selector: #selector(UpdateFromiCloud), name: NSUbiquitousKeyValueStoreDidChangeExternallyNotification, object: store)
+        }
+    }
+    
+    func UpdateFromiCloud(notification: NSNotification) {
+        iCloudManager.GetFromiCloud()
+        tableView.reloadData()
+    }
+    
+    func networkStatusChanged(notification: NSNotification) {
+        let userInfo = notification.userInfo
+        print (userInfo)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

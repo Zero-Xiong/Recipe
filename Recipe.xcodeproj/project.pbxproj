@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8569B9B1CD1DB2600CBB39F /* iCloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8569B9A1CD1DB2600CBB39F /* iCloudManager.swift */; };
+		C8569B9D1CD1E4B400CBB39F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8569B9C1CD1E4B400CBB39F /* Reachability.swift */; };
 		C899E8AB1CC8B6610052BD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899E8AA1CC8B6610052BD85 /* AppDelegate.swift */; };
 		C899E8B01CC8B6610052BD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C899E8AE1CC8B6610052BD85 /* Main.storyboard */; };
 		C899E8B21CC8B6610052BD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C899E8B11CC8B6610052BD85 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8569B9A1CD1DB2600CBB39F /* iCloudManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCloudManager.swift; sourceTree = "<group>"; };
+		C8569B9C1CD1E4B400CBB39F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C899E8A71CC8B6610052BD85 /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C899E8AA1CC8B6610052BD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C899E8AF1CC8B6610052BD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				C899E8DA1CC9BD060052BD85 /* RecipeModel.swift */,
 				C899E8DC1CC9BD950052BD85 /* RecipeManager.swift */,
 				C8A745031CD0B86100EEE26E /* MyTableViewCell.swift */,
+				C8569B9A1CD1DB2600CBB39F /* iCloudManager.swift */,
+				C8569B9C1CD1E4B400CBB39F /* Reachability.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -278,12 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B4F6931CCF59BE005C9294 /* AddViewController.swift in Sources */,
+				C8569B9B1CD1DB2600CBB39F /* iCloudManager.swift in Sources */,
 				C8A745041CD0B86100EEE26E /* MyTableViewCell.swift in Sources */,
 				C899E8D91CC8D5BC0052BD85 /* ListViewController.swift in Sources */,
 				C899E8DD1CC9BD950052BD85 /* RecipeManager.swift in Sources */,
 				C8B4F6951CCF59CD005C9294 /* DetailViewController.swift in Sources */,
 				C8A745021CD0AFDF00EEE26E /* NSUserDefaultsManager.swift in Sources */,
 				C899E8AB1CC8B6610052BD85 /* AppDelegate.swift in Sources */,
+				C8569B9D1CD1E4B400CBB39F /* Reachability.swift in Sources */,
 				C899E8DB1CC9BD060052BD85 /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
