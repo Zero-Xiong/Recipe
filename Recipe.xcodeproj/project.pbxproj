@@ -22,6 +22,19 @@
 		C8A745041CD0B86100EEE26E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A745031CD0B86100EEE26E /* MyTableViewCell.swift */; };
 		C8B4F6931CCF59BE005C9294 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B4F6921CCF59BE005C9294 /* AddViewController.swift */; };
 		C8B4F6951CCF59CD005C9294 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B4F6941CCF59CD005C9294 /* DetailViewController.swift */; };
+		C8E5EA801CD20CD7008A360F /* breads.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA771CD20CD7008A360F /* breads.jpg */; };
+		C8E5EA811CD20CD7008A360F /* breads.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA781CD20CD7008A360F /* breads.pdf */; };
+		C8E5EA821CD20CD7008A360F /* BreadsIndex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA791CD20CD7008A360F /* BreadsIndex.jpg */; };
+		C8E5EA831CD20CD7008A360F /* breadsindex.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA7A1CD20CD7008A360F /* breadsindex.pdf */; };
+		C8E5EA841CD20CD7008A360F /* breadslaunch.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA7B1CD20CD7008A360F /* breadslaunch.pdf */; };
+		C8E5EA851CD20CD7008A360F /* honeycomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA7C1CD20CD7008A360F /* honeycomb.jpg */; };
+		C8E5EA861CD20CD7008A360F /* honeycomb.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA7D1CD20CD7008A360F /* honeycomb.pdf */; };
+		C8E5EA871CD20CD7008A360F /* strawberries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA7E1CD20CD7008A360F /* strawberries.jpg */; };
+		C8E5EA881CD20CD7008A360F /* strawberries.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA7F1CD20CD7008A360F /* strawberries.pdf */; };
+		C8E5EA911CD20E08008A360F /* android in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA8D1CD20E08008A360F /* android */; };
+		C8E5EA921CD20E08008A360F /* ios in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA8E1CD20E08008A360F /* ios */; };
+		C8E5EA931CD20E08008A360F /* Recipe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA8F1CD20E08008A360F /* Recipe.jpg */; };
+		C8E5EA941CD20E08008A360F /* watchkit in Resources */ = {isa = PBXBuildFile; fileRef = C8E5EA901CD20E08008A360F /* watchkit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +76,19 @@
 		C8A745031CD0B86100EEE26E /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		C8B4F6921CCF59BE005C9294 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C8B4F6941CCF59CD005C9294 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C8E5EA771CD20CD7008A360F /* breads.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breads.jpg; sourceTree = "<group>"; };
+		C8E5EA781CD20CD7008A360F /* breads.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = breads.pdf; sourceTree = "<group>"; };
+		C8E5EA791CD20CD7008A360F /* BreadsIndex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BreadsIndex.jpg; sourceTree = "<group>"; };
+		C8E5EA7A1CD20CD7008A360F /* breadsindex.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = breadsindex.pdf; sourceTree = "<group>"; };
+		C8E5EA7B1CD20CD7008A360F /* breadslaunch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = breadslaunch.pdf; sourceTree = "<group>"; };
+		C8E5EA7C1CD20CD7008A360F /* honeycomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = honeycomb.jpg; sourceTree = "<group>"; };
+		C8E5EA7D1CD20CD7008A360F /* honeycomb.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = honeycomb.pdf; sourceTree = "<group>"; };
+		C8E5EA7E1CD20CD7008A360F /* strawberries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = strawberries.jpg; sourceTree = "<group>"; };
+		C8E5EA7F1CD20CD7008A360F /* strawberries.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = strawberries.pdf; sourceTree = "<group>"; };
+		C8E5EA8D1CD20E08008A360F /* android */ = {isa = PBXFileReference; lastKnownFileType = folder; name = android; path = SupportingFiles/AppIcons/android; sourceTree = "<group>"; };
+		C8E5EA8E1CD20E08008A360F /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; path = SupportingFiles/AppIcons/ios; sourceTree = "<group>"; };
+		C8E5EA8F1CD20E08008A360F /* Recipe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Recipe.jpg; path = SupportingFiles/AppIcons/Recipe.jpg; sourceTree = "<group>"; };
+		C8E5EA901CD20E08008A360F /* watchkit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = watchkit; path = SupportingFiles/AppIcons/watchkit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +119,7 @@
 		C899E89E1CC8B6610052BD85 = {
 			isa = PBXGroup;
 			children = (
+				C8E5EA761CD20CA2008A360F /* SupportingFiles */,
 				C899E8A91CC8B6610052BD85 /* Recipe */,
 				C899E8BE1CC8B6620052BD85 /* RecipeTests */,
 				C899E8C91CC8B6620052BD85 /* RecipeUITests */,
@@ -147,6 +174,43 @@
 				C899E8CC1CC8B6620052BD85 /* Info.plist */,
 			);
 			path = RecipeUITests;
+			sourceTree = "<group>";
+		};
+		C8E5EA761CD20CA2008A360F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C8E5EA8A1CD20DB8008A360F /* AppIcons */,
+				C8E5EA891CD20D65008A360F /* Images */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C8E5EA891CD20D65008A360F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C8E5EA771CD20CD7008A360F /* breads.jpg */,
+				C8E5EA781CD20CD7008A360F /* breads.pdf */,
+				C8E5EA791CD20CD7008A360F /* BreadsIndex.jpg */,
+				C8E5EA7A1CD20CD7008A360F /* breadsindex.pdf */,
+				C8E5EA7B1CD20CD7008A360F /* breadslaunch.pdf */,
+				C8E5EA7C1CD20CD7008A360F /* honeycomb.jpg */,
+				C8E5EA7D1CD20CD7008A360F /* honeycomb.pdf */,
+				C8E5EA7E1CD20CD7008A360F /* strawberries.jpg */,
+				C8E5EA7F1CD20CD7008A360F /* strawberries.pdf */,
+			);
+			name = Images;
+			path = SupportingFiles/Images;
+			sourceTree = "<group>";
+		};
+		C8E5EA8A1CD20DB8008A360F /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				C8E5EA8D1CD20E08008A360F /* android */,
+				C8E5EA8E1CD20E08008A360F /* ios */,
+				C8E5EA8F1CD20E08008A360F /* Recipe.jpg */,
+				C8E5EA901CD20E08008A360F /* watchkit */,
+			);
+			name = AppIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +320,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E5EA841CD20CD7008A360F /* breadslaunch.pdf in Resources */,
+				C8E5EA831CD20CD7008A360F /* breadsindex.pdf in Resources */,
+				C8E5EA821CD20CD7008A360F /* BreadsIndex.jpg in Resources */,
+				C8E5EA931CD20E08008A360F /* Recipe.jpg in Resources */,
+				C8E5EA881CD20CD7008A360F /* strawberries.pdf in Resources */,
+				C8E5EA921CD20E08008A360F /* ios in Resources */,
+				C8E5EA801CD20CD7008A360F /* breads.jpg in Resources */,
+				C8E5EA941CD20E08008A360F /* watchkit in Resources */,
 				C899E8B51CC8B6620052BD85 /* LaunchScreen.storyboard in Resources */,
+				C8E5EA861CD20CD7008A360F /* honeycomb.pdf in Resources */,
 				C899E8B21CC8B6610052BD85 /* Assets.xcassets in Resources */,
+				C8E5EA871CD20CD7008A360F /* strawberries.jpg in Resources */,
 				C899E8B01CC8B6610052BD85 /* Main.storyboard in Resources */,
+				C8E5EA851CD20CD7008A360F /* honeycomb.jpg in Resources */,
+				C8E5EA911CD20E08008A360F /* android in Resources */,
+				C8E5EA811CD20CD7008A360F /* breads.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
